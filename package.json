@@ -1,0 +1,27 @@
+{
+	"name": "woo-fortnox-hub",
+	"version": "1.0.0",
+	"description": "Fortnox Hub for WooCommerce",
+	"author": "BjornTech AB",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"plugin-zip": "wp-scripts plugin-zip",
+		"plugin:release": "composer install && composer dump-autoload -o && wp-scripts plugin-zip"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^23.2.0"
+	},
+	"dependencies": {},
+	"files": [
+		"admin",
+		"assets",
+		"includes",
+		"libraries",
+		"LICENSE",
+		"woo-fortnox-hub.php",
+		"readme.txt",
+		"vendor"
+
+	]
+}
